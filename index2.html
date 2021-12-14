@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MabilWEB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main2.css" />
+	</head>
+
+	<style>
+		* {box-sizing: border-box}
+		.mySlides {display: none}
+		
+		
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+		
+		/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		.prev{
+			left: 0%;
+		}
+		
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+		
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+		
+		/* Caption text */
+		.text {
+		  color: #1a1616;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+		
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+		
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+		
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+		
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+		</style>
+
+
+
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+			
+					<div id="intro">
+						<div class="foto">
+							<img class="circulo" src="pedro.jpeg" alt ="logo large" width="200" height="300"> 
+						</div>
+						<h1>PEDRO MABIL<br/>
+						ESPINOSA</h1>
+						<p>Ing.Electrónico<a href="https://twitter.com/ajlkn">h3mabil@gmail.com</a><br/>
+						2291766233 <a>cedula y título</a></p>
+					
+					</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Experiencia laboral</a></li>
+							<li><a href="CV.html">Curriculum Vitae</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Diciembre, 2021</span>
+									<h2><a href="#">Trayectoria<br />
+									laboral</a></h2>
+									<p>Desarrollo de proyectos creativos<br />
+									enfocados en la industria y en el desarrollo cientifico<br />
+									ideas hechas tecnología</p>
+								</header>
+
+
+								<a href="#" class="image main">
+									
+									<div class="slideshow-container">
+
+										<div class="mySlides fade">
+										  <div class="numbertext">1 / 5</div>
+										  <img src="matlab.jpg" style="width:100%">
+										  <div class="text">Matlab proyectos</div>
+										</div>
+										
+										<div class="mySlides fade">
+										  <div class="numbertext">2 / 5</div>
+										  <img src="python.jpg" style="width:100%">
+										  <div class="text">Python proyectos</div>
+										</div>
+										
+										<div class="mySlides fade">
+										  <div class="numbertext">3 / 5</div>
+										  <img src="lenguajes.png" style="width:100%">
+										  <div class="text">Desarrollo Web</div>
+										</div>
+
+										<div class="mySlides fade">
+											<div class="numbertext">4 / 5</div>
+											<img src="sql.jpg" style="width:100%">
+											<div class="text">Gestion de bases de Datos</div>
+										</div>
+
+										<div class="mySlides fade">
+											<div class="numbertext">5 / 5</div>
+											<img src="sol.jpg" style="width:100%">
+											<div class="text">Diseño en 3d</div>
+										</div>
+										
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								   
+								   </div>
+								   <br>
+								   
+								   <div style="text-align:center;">
+									 <span class="dot" onclick="currentSlide(1)"></span> 
+									 <span class="dot" onclick="currentSlide(2)"></span> 
+									 <span class="dot" onclick="currentSlide(3)"></span>
+									 <span class="dot" onclick="currentSlide(4)"></span>
+									 <span class="dot" onclick="currentSlide(5)"></span>    
+								   </div>
+								   
+
+
+								</a>
+
+
+
+								<ul class="actions special">
+									<li><a href="#" class="button large">Galeria de proyectos</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">Agosto, 2018</span>
+										<h2><a href="#">Uso de Solidworks<br />
+										en el diseño de piezas en 3d</a></h2>
+									</header>
+									
+									<a href="#" class="image fit">
+										<video width="420" height="340" controls>
+											<source src="solid.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</a>
+									<p>Diseño de piezas en 3d para la construcion de un sistema de estimulación tactil.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">septiembre, 2021</span>
+										<h2><a href="#">Manejo de bases de datos<br />
+										SQL</a></h2>
+									</header>
+									<a href="#" class="image fit">
+										<video width="420" height="340" controls>
+											<source src="inventario.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</a>
+									<p>Creacion de una interfaz grafica para el inventario de una tienda de abarrotes desarrollada en python.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Febrero, 2021</span>
+										<h2><a href="#">Aplicación para medir<br />
+										la percepción de los tamaños</a></h2>
+									</header>
+									<a href="#" class="image fit">
+
+										<video width="420" height="340" controls>
+											<source src="circulo.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+
+									</a>
+									<p>En esta Aplicación muestro una manera de medir la persepción visual al comparar distintos tamaños de un conjunto de objetos. Con la libreria tkinter de python</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Abril, 2021</span>
+										<h2><a href="#">GUI para el analisis de registros<br />
+										de EEG(electroencefalografía)</a></h2>
+									</header>
+									<a href="#" class="image fit">
+										<video width="420" height="340" controls>
+											<source src="EEGGUI.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</a>
+									<p>En esta Aplicación desarroyada en python muestro una manera de poder analizar y obtener datos de las señales cerebrales previamente registradas almacenadas en un archivo .cnt</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 7, 2017</span>
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
+
+	
+
+					</div>
+
+
+
+			</div>
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+
+	</body>
+</html>

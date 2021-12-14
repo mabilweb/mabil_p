@@ -1,0 +1,73 @@
+body{
+    margin-top: 0%; margin-left: 10px; margin-right: 10px;
+}
+
+@font-face{
+    font-family: "mifuente";
+    src:url('fonts/ZenKakuGothicAntique-Light.ttf')
+}
+
+@font-face{
+    font-family: "mifuente0";
+    src:url('fonts/ZenKakuGothicAntique-Bold.ttf')
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+img{
+    /*padding: 1em;*/
+    margin: 10px;
+    /*border: 1px solid rgb(81, 138, 165); */
+}
+.foto{
+    display: grid; grid-template-columns: 100%; justify-items: center;
+    
+}
+
+.circulo{
+    border-radius: 50%; /* border-width: 2px; border-color: brown; border-style: solid;*/
+}
+
+.right{
+    /*background: rgb(63, 70, 71);*/
+    background-image: url("pic09.jpg");
+
+}
+
+.left{
+    background: rgb(255, 204, 153);
+}
+.uno{
+    display: grid;
+    justify-items: center;
+    background: rgb(70, 67, 63); 
+    /*border-color: black; border-width: 2px; border-style: solid;*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.dos{
+    display: grid;
+    justify-items: center;
+    background: rgb(255, 204, 153); 
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.tres{
+    font-family:"mifuente0";
+    font-size: 20px;
+}
+h1{
+    font-family:"mifuente";
+    font-size: 20px;
+}
+h2{
+    font-family:"mifuente";
+    font-size: 15px;
+}
+.nombre{
+    font-family:"mifuente";
+    font-size: 300%;
+}
